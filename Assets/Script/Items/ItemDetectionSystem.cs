@@ -25,6 +25,8 @@ public class ItemDetectionSystem : MonoBehaviour
                 }
                 return;
             }
+            
+
             if (_currentItemDetected == null)
             {
                     _currentItemDetected = detectedObject.GetComponent<InteractableObject>();

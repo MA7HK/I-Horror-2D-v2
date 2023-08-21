@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5871032556006182552}
   - component: {fileID: 7701346134491063908}
   - component: {fileID: 9194453403953325965}
-  m_Layer: 0
+  - component: {fileID: 2200035830877350100}
+  m_Layer: 7
   m_Name: Apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,5 +134,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f92b5be18a23348a0e41923a916176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
   ItemButtom: {fileID: 3278035957755841691, guid: afa04aaf90b58b2438325d11975bda87, type: 3}
+--- !u!114 &2200035830877350100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8781064993138129772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33c3fd56cef98d4d8a421f113512f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isUnderDetection: 0

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4317044535372117331}
   - component: {fileID: 8075083863401581908}
   - component: {fileID: 853523895572394160}
-  m_Layer: 0
+  - component: {fileID: 6151561042716703685}
+  m_Layer: 7
   m_Name: Fragment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 61.5, y: -16.2, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 29
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.5912342, b: 1, a: 1}
+  m_Color: {r: 0.43081754, g: 0.76786286, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,5 +144,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f92b5be18a23348a0e41923a916176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
   ItemButtom: {fileID: 6096301533106187732, guid: 577a440aadfb891418fa321a03e836f8, type: 3}
+--- !u!114 &6151561042716703685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909183194412641833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33c3fd56cef98d4d8a421f113512f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isUnderDetection: 0
