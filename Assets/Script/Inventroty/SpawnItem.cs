@@ -7,6 +7,11 @@ public class SpawnItem : MonoBehaviour
     public GameObject item;
     private Transform playerPos;
 
+    /*private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }*/
+
     void Start()
     {
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;

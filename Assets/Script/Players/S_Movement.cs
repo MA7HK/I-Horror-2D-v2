@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class S_Movement : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     private Vector2 movement;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;

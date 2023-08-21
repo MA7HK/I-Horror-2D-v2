@@ -7,9 +7,16 @@ public class Pickup : MonoBehaviour
     private Inventory inventory;
     public GameObject ItemButtom;
 
+    /*private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }*/
+
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        DontDestroyOnLoad(this);
+       
     }
 
     void OnTriggerEnter2D(Collider2D Other)

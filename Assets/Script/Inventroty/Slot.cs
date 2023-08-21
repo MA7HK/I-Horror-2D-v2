@@ -7,9 +7,14 @@ public class Slot : MonoBehaviour
     private Inventory inventory;
     public int i;
 
+    /*private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }*/
+
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>(); 
     }
 
     private void Update()

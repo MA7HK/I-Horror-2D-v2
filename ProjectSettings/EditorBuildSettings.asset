@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 1e5952e801660fd44837c4c36bfabcda
   - enabled: 1
-    path: Assets/Scenes/I_HorrorScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Final_map1.unity
+    guid: 2843166c55bcdf54e92dd4ed9b020719
+  - enabled: 1
+    path: Assets/Scenes/Village Hall.unity
+    guid: 65d299250b2c87e40b33483ac9abb85c
+  - enabled: 1
+    path: Assets/Scenes/Village_hall_floor2.unity
+    guid: e69b8e93db8017a41b9e3057bf391935
+  - enabled: 1
+    path: Assets/Scenes/Village_hall_pt2.unity
+    guid: 290abb963232b2d43b6fc07ebda6ae97
   m_configObjects: {}

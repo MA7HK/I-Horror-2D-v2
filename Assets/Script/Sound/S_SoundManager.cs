@@ -18,6 +18,7 @@ public class S_SoundManager : MonoBehaviour
         else
         {
             SFX = this;
+            DontDestroyOnLoad(this);
         }
     }
 

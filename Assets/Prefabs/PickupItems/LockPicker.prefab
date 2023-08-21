@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7409372793849298711}
   - component: {fileID: 1681267920745079223}
-  - component: {fileID: 7649698847424048377}
   - component: {fileID: 5961337683987933719}
-  m_Layer: 0
+  - component: {fileID: 7649698847424048377}
+  - component: {fileID: 79798734126510049}
+  m_Layer: 7
   m_Name: LockPicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7649698847424048377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4112039262267070473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f92b5be18a23348a0e41923a916176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  ItemButtom: {fileID: 3278035957755841691, guid: cd11c57f4fafd634fb1fa777bd25ef00, type: 3}
 --- !u!60 &5961337683987933719
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -220,3 +207,29 @@ PolygonCollider2D:
       - {x: -2.055, y: -1.73}
       - {x: -1.795, y: -1.56}
   m_UseDelaunayMesh: 0
+--- !u!114 &7649698847424048377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112039262267070473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f92b5be18a23348a0e41923a916176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemButtom: {fileID: 3278035957755841691, guid: cd11c57f4fafd634fb1fa777bd25ef00, type: 3}
+--- !u!114 &79798734126510049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4112039262267070473}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33c3fd56cef98d4d8a421f113512f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isUnderDetection: 0
