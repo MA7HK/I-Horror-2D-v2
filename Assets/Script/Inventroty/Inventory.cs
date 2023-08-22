@@ -39,6 +39,7 @@ public class Inventory : MonoBehaviour
             {
                 slotItems[i] = io._itemName;
                 _slotImages[i].sprite = sp;
+             //   CollectEffect(io.transform.position, _slotImages[i].rectTransform);
                 _slotBools_isAvailable[i] = false;
                 Color c = _slotImages[i].color;
                 c.a = 1f;
@@ -48,7 +49,10 @@ public class Inventory : MonoBehaviour
         }
         Debug.Log("No space");
     }
-
+    public void CollectEffect(Vector3 objectPosition, RectTransform targetPos)
+    {
+         //
+    }
     public void DiscardItem(string itemName)
     {
         //check the items

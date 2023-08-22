@@ -26,7 +26,6 @@ public class S_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     private void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
@@ -38,7 +37,6 @@ public class S_Movement : MonoBehaviour
         {
             lastMoveDirection = moveDirection;
         }
-
 
         if (Input.GetKey(KeyCode.LeftShift))
         { speed = _sprintSpeed; }
