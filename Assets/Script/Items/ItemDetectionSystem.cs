@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ItemDetectionSystem : MonoBehaviour
 {
@@ -10,6 +12,12 @@ public class ItemDetectionSystem : MonoBehaviour
     private float detectionDurationCounter;
 
     public InteractableObject _currentItemDetected;
+    public Inventory _Inventory;
+    public event Action<InteractableObject> _itemPickedUp;
+    private void Start()
+    {
+        _Inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+    }
     private void Update()
     {
 
@@ -21,22 +29,40 @@ public class ItemDetectionSystem : MonoBehaviour
                 if (_currentItemDetected != null)
                 {
                     _currentItemDetected._isUnderDetection = false;
-                _currentItemDetected = null;
+                    _currentItemDetected = null;
                 }
                 return;
             }
-            
+
 
             if (_currentItemDetected == null)
             {
-                    _currentItemDetected = detectedObject.GetComponent<InteractableObject>();
-                    if (_currentItemDetected != null)
-                    {
+                _currentItemDetected = detectedObject.GetComponent<InteractableObject>();
+                if (_currentItemDetected != null)
+                {
                     _currentItemDetected._isUnderDetection = true;
-                    }
+                }
             }
         }
         else detectionDurationCounter += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (_currentItemDetected != null && _Inventory.isSlotAvailable())
+            {
+
+                _currentItemDetected.ItemFunction();
+                _itemPickedUp?.Invoke(_currentItemDetected);
+                _currentItemDetected = null;
+            }
+            else if (!_Inventory.isSlotAvailable() && _currentItemDetected)
+            {
+                Debug.Log("slot is full");
+                _currentItemDetected.shakeUI();
+            }
+        } 
+
+
     }
     private void OnDrawGizmos()
     {

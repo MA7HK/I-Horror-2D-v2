@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pushable
+  - Bullet
+  - ItemDetection
+  - Inventory
   layers:
   - Default
   - TransparentFX
@@ -45,9 +48,21 @@ TagManager:
   - name: Prist
     uniqueID: 4253258653
     locked: 0
-  - name: Character
-    uniqueID: 682067863
+  - name: Back_environment
+    uniqueID: 1091317241
     locked: 0
   - name: Fog
+    uniqueID: 1887723975
+    locked: 0
+  - name: Character
+    uniqueID: 2071866433
+    locked: 0
+  - name: ItemUi
+    uniqueID: 932820967
+    locked: 0
+  - name: Front_environment
+    uniqueID: 682067863
+    locked: 0
+  - name: UI
     uniqueID: 3684868611
     locked: 0

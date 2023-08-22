@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 1a563962d0e3844479eab3ff4627a4d7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 334
+        width: 81
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5f792163bc2a24193d1f0cc9c64bbf
+      internalID: -323907229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 333
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498b0d34864f7e747b26ab43c69777fd
+      internalID: 324062499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 329
+        width: 79
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50cb109bf0562e4e9d8787b0c31f68c
+      internalID: 414634417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 371
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f44c665959d20479765f71b8f007aa
+      internalID: -1879456294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 371
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d794f0c26074d6d48a6923c0d71b61f9
+      internalID: 940789698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 371
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b432223962e1049b28fda5db79e558
+      internalID: 459824219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 368
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098a06dd4c6102d449e45b502f0e0983
+      internalID: -1043631070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 237
+        width: 82
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd16ad2218b9ca4689e2431a2249121
+      internalID: -1716015447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 239
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c958a1282d40ff4194de8da56d71175
+      internalID: -1543140843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 239
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8403cf231c4aacc40bf2032af5d4c7fe
+      internalID: 2137317374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 297
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2487f70c73558bb4c8d7bcb0fb552afe
+      internalID: 1190099710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 297
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370342230fab1c447b89f343bf9fe3d9
+      internalID: 375445031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 295
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551f0b1686ee4d045a38770211b62b63
+      internalID: 1114211665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 296
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e32de7a2bd44941924a45ff13eed9a
+      internalID: 516980929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 226
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ffe16b362699845b283544b3426e32
+      internalID: 1851883964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 218
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4668bb58f88364487082ae4775fa55
+      internalID: 342747990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 226
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195c5ec4b5dd0f2448e3160bb8ddb960
+      internalID: -687550903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 226
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b58e3a7d5976c45be69e21fd647c91
+      internalID: -1177357390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 118
+        width: 84
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40e5ccd0ca63ed4ab4bc88508c48062
+      internalID: -1210879261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 118
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d42797b301f9024588a84e7f5fb2abf
+      internalID: -454693293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 156
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151558af927105e4e934ad368e38982d
+      internalID: -193575782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 155
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34cb8ad63984594ebc9d32036957383
+      internalID: -1969816415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 156
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b98077d732ce0f469a15128e7d50b86
+      internalID: 716130553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 156
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609b5fcc79e5b5c4da54e62e76a58247
+      internalID: 553100655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 103
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e495256d771444da2b7a31c72c04c0
+      internalID: -237893294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 82
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dde2a433e0ba7e429383e7709d31196
+      internalID: 186992145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 81
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e739a9ca99dc2df4d835c7a59d0e18e5
+      internalID: -604542401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 81
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac2c787ef1f5e147aef06afa3c1c241
+      internalID: -1933274350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 80
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c99ec1717e2274eb046d2db715678f
+      internalID: -1161616749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 25
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a5e2c67d19c3b4c957191975b4c997
+      internalID: -1650378594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 25
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4148cd20cdd35648a25eed1540e84c2
+      internalID: -1571697743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 8
+        width: 60
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921b548cadbc8f34db947a381bf8dc87
+      internalID: -2047560809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 8
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacb1ccd01599b845959d6e30c4621df
+      internalID: -966101163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 7
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26898c9501ff2c744bb906b2ef405cf6
+      internalID: -272705888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 7
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7275f12b8e03b043acfef38823ab615
+      internalID: 1891976029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_0: -323907229
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_1: 324062499
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_10: 1190099710
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_11: 375445031
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_12: 1114211665
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_13: 516980929
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_14: 1851883964
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_15: 342747990
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_16: -687550903
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_17: -1177357390
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_18: -1210879261
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_19: -454693293
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_2: 414634417
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_20: -193575782
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_21: -1969816415
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_22: 716130553
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_23: 553100655
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_24: -237893294
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_25: 186992145
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_26: -604542401
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_27: -1933274350
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_28: -1161616749
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_29: -1650378594
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_3: -1879456294
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_30: -1571697743
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_31: -2047560809
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_32: -966101163
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_33: -272705888
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_34: 1891976029
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_4: 940789698
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_5: 459824219
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_6: -1043631070
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_7: -1716015447
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_8: -1543140843
+      ibmagar0001_2d_wooden_box_as_a_2d_game_asset_square_shape_f8571505-2f2b-48dc-8f47-9aadb339b1af-removebg-preview_9: 2137317374
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
