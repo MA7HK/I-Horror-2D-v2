@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SceneManage : MonoBehaviour
 {
@@ -19,20 +20,34 @@ public class SceneManage : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    
+    public List<GameObject> gameObjectsToKeep;
     public void LoadHall()
     {
-        SceneManager.LoadScene(3);
+        foreach (GameObject go in gameObjectsToKeep)
+        {
+            DontDestroyOnLoad(go);
+        }
+        SceneManager.LoadSceneAsync(3);
     }
-    
+    public void LoadMainMap()
+    {
+       /* foreach (GameObject go in gameObjectsToKeep)
+        {
+            DontDestroyOnLoad(go);
+        }*/
+        SceneManager.LoadSceneAsync(2);
+    }
+
     public void LoadUpperFloor()
     {
-        SceneManager.LoadScene(4);
+        
+        SceneManager.LoadSceneAsync(4);
     }
-    
+
     public void LoadBasement()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadSceneAsync(5);
     }
+
 
 }

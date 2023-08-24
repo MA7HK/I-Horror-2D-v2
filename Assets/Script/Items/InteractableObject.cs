@@ -7,9 +7,11 @@ using DG.Tweening;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 
+public enum interactableObjectType { item, door,triggerPoint}
 [RequireComponent(typeof(Collider2D))]
 public class InteractableObject : MonoBehaviour
 {
+    public interactableObjectType ObjectType;
     public string _itemName="";
     public bool _isUnderDetection = false;
     public Transform _UIpos;
@@ -71,7 +73,7 @@ public class InteractableObject : MonoBehaviour
             RemoveIndication();
         }
     }
-     public virtual void  ItemFunction()
+    public virtual void  ItemFunction()
     {
         // item function here
 

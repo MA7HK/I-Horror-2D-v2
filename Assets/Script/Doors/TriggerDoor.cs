@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class NormalDoor : InteractableObject
+public class TriggerDoor : InteractableObject
 {
-    public GameObject _doorToOpen;
+
+    public  UnityEvent action;
     public override void ItemFunction()
     {
-        // Open door
-       
+        action.Invoke();
     }
+
 }

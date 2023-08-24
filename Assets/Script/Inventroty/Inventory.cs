@@ -9,7 +9,9 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
 
-
+    private void Awake()
+    {
+    }
     private void Start()
     {
         GameObject.FindGameObjectWithTag("ItemDetection").GetComponent<ItemDetectionSystem>()._itemPickedUp += InsertItem;

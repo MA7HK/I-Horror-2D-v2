@@ -46,20 +46,33 @@ public class ItemDetectionSystem : MonoBehaviour
         }
         else detectionDurationCounter += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && _currentItemDetected)
         {
-            if (_currentItemDetected != null && _Inventory.isSlotAvailable())
+            interactableObjectType type = _currentItemDetected.ObjectType;
+            switch(type)
             {
-
-                _currentItemDetected.ItemFunction();
-                _itemPickedUp?.Invoke(_currentItemDetected);
-                _currentItemDetected = null;
+                case interactableObjectType.item:
+                    {
+                        if (_Inventory.isSlotAvailable())
+                        {
+                            _currentItemDetected.ItemFunction();
+                            _itemPickedUp?.Invoke(_currentItemDetected);
+                            _currentItemDetected = null;
+                        }
+                        else if (!_Inventory.isSlotAvailable() && _currentItemDetected)
+                        {
+                            Debug.Log("slot is full");
+                            _currentItemDetected.shakeUI();
+                        }
+                    }
+                    break;
+                case interactableObjectType.door:
+                    {
+                        _currentItemDetected.ItemFunction();
+                    }
+                    break;
             }
-            else if (!_Inventory.isSlotAvailable() && _currentItemDetected)
-            {
-                Debug.Log("slot is full");
-                _currentItemDetected.shakeUI();
-            }
+           
         } 
 
 
