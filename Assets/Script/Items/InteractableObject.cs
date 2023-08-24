@@ -12,8 +12,10 @@ public class InteractableObject : MonoBehaviour
 {
     public string _itemName="";
     public bool _isUnderDetection = false;
+    public Transform _UIpos;
     private GameObject _indicationObject;
     public Sprite _objectSprite;
+
     private void Start()
     {
         GetComponent<Collider2D>().isTrigger = true;
@@ -25,7 +27,7 @@ public class InteractableObject : MonoBehaviour
             GameObject indicationObjectPrefab = (GameObject)Resources.Load("IndicationObject");
             if (indicationObjectPrefab != null)
             {
-                _indicationObject = Instantiate(indicationObjectPrefab, transform.position + Vector3.up * 1f, Quaternion.identity,transform);
+                _indicationObject = Instantiate(indicationObjectPrefab,_UIpos.position, Quaternion.identity,transform);
             }
             else
             {

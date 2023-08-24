@@ -17,7 +17,7 @@ public class S_Movement : MonoBehaviour
     [Header("speeds")]
     public float _initialSpeed;
     public float _sprintSpeed;
-
+    public FootStepsController _footSteps;
     /*private void Start()
     {
         p_view = GetComponent<PhotonView>();
@@ -39,9 +39,23 @@ public class S_Movement : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
-        { speed = _sprintSpeed; }
+        {
+            speed = _sprintSpeed;
+            _footSteps.isSprinting = true;
+        }
         else
-        { speed = _initialSpeed; }
+        {
+            speed = _initialSpeed;
+            _footSteps.isSprinting = false;
+        }
+
+
+        if (speed > 0)
+            _footSteps.isWalking = true;
+        else
+            _footSteps.isWalking = false;
+
+
 
         animator.SetFloat("Horizontal", moveDirection.x);
         animator.SetFloat("Vertical", moveDirection.y);
