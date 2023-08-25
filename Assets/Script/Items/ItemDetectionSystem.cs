@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -14,6 +15,9 @@ public class ItemDetectionSystem : MonoBehaviour
     public InteractableObject _currentItemDetected;
     public Inventory _Inventory;
     public event Action<InteractableObject> _itemPickedUp;
+
+    [Header("Hiding mechanics")]
+    public HidingMechanics _hideSystem;
     private void Start()
     {
         _Inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
@@ -71,12 +75,21 @@ public class ItemDetectionSystem : MonoBehaviour
                         _currentItemDetected.ItemFunction();
                     }
                     break;
+              
             }
            
-        } 
+        }
 
-
-    }
+         if (Input.GetKeyDown(KeyCode.E) && _currentItemDetected)
+        {
+            interactableObjectType type = _currentItemDetected.ObjectType;
+            if(type==interactableObjectType.hidePlace)
+            {
+                if (_hideSystem.isHiding) _hideSystem.UnHide();
+                else _hideSystem.Hide();
+            }
+        }
+        }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRadius);

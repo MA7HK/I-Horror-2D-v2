@@ -44,13 +44,15 @@ public class FootStepsController : MonoBehaviour
             }
         }
     }
-
+    public Transform playerdirection;
     void SpawnFootstep()
     {
         Vector3 position = transform.position;
-        GameObject footstep = Instantiate(footstepPrefab, position, footstepPrefab.transform.rotation);
+        Quaternion rotation = Quaternion.LookRotation(playerdirection.forward, playerdirection.right);
+        GameObject footstep = Instantiate(footstepPrefab, position, rotation);
         footsteps.Add(footstep);
     }
+
 
     public void StartWalking()
     {

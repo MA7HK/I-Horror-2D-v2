@@ -12,53 +12,14 @@ public class HidingMechanics : MonoBehaviour
     public float checkInterval = 1f; // The time interval between checks
     private Collider2D currentHideObject;
 
-    [SerializeField] private bool isHiding=false;
+    [SerializeField] internal bool isHiding=false;
+
+    public InteractableObject _currentItemDetected;
     private void Start()
     {
-        // Start the CheckForObjects coroutine
-        StartCoroutine(CheckForObjects());
+        
     }
 
-    private IEnumerator CheckForObjects()
-    {
-        while (true)
-        {
-            // Use OverlapCircle to check for objects within the checkRadius and on the layerToCheck layer
-            currentHideObject = Physics2D.OverlapCircle(transform.position, checkRadius, layerToCheck);
-
-            // If any objects were found
-            if (currentHideObject)
-            {
-                // Run the ObjectFound function
-                ObjectFound();
-            }
-
-            // Wait for the checkInterval before checking again
-            yield return new WaitForSeconds(checkInterval);
-        }
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E) && currentHideObject)
-        {
-            if(!isHiding)
-            {
-                Hide();
-            }
-            else
-            {
-                UnHide();
-            }
-        }
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            Hide();
-        }if(Input.GetKeyDown(KeyCode.Z))
-        {
-            UnHide();
-        }
-    }
     [SerializeField] private GameObject _HideUI;
     [SerializeField] private Image _backgroundHideUI;
    [SerializeField]  private float _targetAlphaforBackground;
@@ -68,7 +29,7 @@ public class HidingMechanics : MonoBehaviour
     [Header("references")]
     [SerializeField] S_Movement _movement;
     [SerializeField] GameObject[] itemsToHide;
-    void Hide()
+   public void Hide()
     {
         _HideUI.SetActive(true);
         _backgroundHideUI.DOFade(_targetAlphaforBackground, .4f);
@@ -83,7 +44,7 @@ public class HidingMechanics : MonoBehaviour
         }
         _movement.enabled = !isHiding;
     }
-    private void UnHide()
+    public void UnHide()
     {
         _backgroundHideUI.DOFade(0, .4f);
         _characterCoverHideUI.GetComponent<Image>().DOFade(0, .3f).OnComplete(() =>

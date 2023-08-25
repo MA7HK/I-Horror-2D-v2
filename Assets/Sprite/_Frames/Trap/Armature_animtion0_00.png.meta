@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce0b1e730f6adc544bbdc4a89ed08852
+guid: ab745fe54ceff6f45a99070e8d0501fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armature_animtion0_00_0
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 159
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9169b74e248cca942bdab23eba222f9b
+      internalID: 919735294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armature_animtion0_00_0: 919735294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

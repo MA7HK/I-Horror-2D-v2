@@ -7,7 +7,7 @@ using DG.Tweening;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 
-public enum interactableObjectType { item, door,triggerPoint}
+public enum interactableObjectType { item, door,hidePlace,triggerPoint}
 [RequireComponent(typeof(Collider2D))]
 public class InteractableObject : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class InteractableObject : MonoBehaviour
     public Transform _UIpos;
     private GameObject _indicationObject;
     public Sprite _objectSprite;
-
+    public string UI_indication_name = "IndicationObject";
     private void Start()
     {
         GetComponent<Collider2D>().isTrigger = true;
@@ -26,7 +26,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (_indicationObject == null)
         {
-            GameObject indicationObjectPrefab = (GameObject)Resources.Load("IndicationObject");
+            GameObject indicationObjectPrefab = (GameObject)Resources.Load(UI_indication_name);
             if (indicationObjectPrefab != null)
             {
                 _indicationObject = Instantiate(indicationObjectPrefab,_UIpos.position, Quaternion.identity,transform);
