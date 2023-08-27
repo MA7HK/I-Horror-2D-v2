@@ -9,6 +9,9 @@ public class S_SoundManager : MonoBehaviour
     [Header("Thunder")]
     public AudioClip[] thundersfx;
 
+    [Header("Player")]
+    public AudioClip heartBeat;
+
     private void Awake()
     {
         if(SFX != null && SFX != this)
@@ -26,6 +29,13 @@ public class S_SoundManager : MonoBehaviour
     {
         int ranInd = Random.Range(0, 3);
         audioSource.PlayOneShot(thundersfx[ranInd]);
+        audioSource.volume = 0.6f;
     }
 
+    public void HeartBeat()
+    {
+        audioSource.loop = true;
+        audioSource.volume = 1.0f;
+        audioSource.PlayOneShot(heartBeat);
+    }
 }

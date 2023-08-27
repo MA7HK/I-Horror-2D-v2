@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(isDecreasingHealth)
         {
-
+            
             if (_healthBar.sizeDelta.x <= minHealth)
                 DieFunction();
             else Decrease();
@@ -62,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
     public void Decrease()
     {
         _healthBar.sizeDelta = new Vector2(_healthBar.sizeDelta.x - _healthDecreaseRate*Time.deltaTime, _healthBar.sizeDelta.y);
+        
     }
     public void Increase()
     {
