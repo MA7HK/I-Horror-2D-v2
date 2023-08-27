@@ -15,6 +15,7 @@ public class HidingMechanics : MonoBehaviour
     [SerializeField] internal bool isHiding=false;
 
     public InteractableObject _currentItemDetected;
+    public Transform player;
     private void Start()
     {
         
@@ -29,6 +30,11 @@ public class HidingMechanics : MonoBehaviour
     [Header("references")]
     [SerializeField] S_Movement _movement;
     [SerializeField] GameObject[] itemsToHide;
+    public PlayerHealth _playerHealth;
+
+    [Header("inform enemies")]
+    public float _informRadius;
+    public LayerMask enemyLayer;
    public void Hide()
     {
         _HideUI.SetActive(true);
@@ -41,6 +47,39 @@ public class HidingMechanics : MonoBehaviour
         foreach(GameObject g in itemsToHide)
         {
             g.SetActive(false);
+        }
+
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, _informRadius,enemyLayer);
+        foreach(Collider2D en in enemies)
+        {
+            if(en.TryGetComponent<Enemy>(out Enemy e))  e._playerHide = true;
+        }
+
+        _movement.enabled = !isHiding;
+    }
+    public void Hide(Transform hidePlace)
+    {
+        player.position = hidePlace.position;
+        _HideUI.SetActive(true);
+        _backgroundHideUI.DOFade(_targetAlphaforBackground, .4f);
+        Vector3 pos = Camera.main.WorldToScreenPoint(hidePlace.position);
+        _characterCoverHideUI.GetComponent<Image>().DOFade(_targetAlphaofCover, .3f).SetDelay(.1f).OnStart(() => { _characterCoverHideUI.DOMove(pos, .3f); });
+        //_characterCoverHideUI.position = pos;
+        isHiding = true;
+        _movement.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        foreach (GameObject g in itemsToHide)
+        {
+            g.SetActive(false);
+        }
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, _informRadius, enemyLayer);
+        foreach (Collider2D en in enemies)
+        {
+            if (en.TryGetComponent<Enemy>(out Enemy e))
+            {
+                e._playerHide = true;
+                _playerHealth.removeFromEnemyList(e);
+               // _playerHealth.isDecreasingHealth = false;
+            }
         }
         _movement.enabled = !isHiding;
     }
@@ -59,6 +98,11 @@ public class HidingMechanics : MonoBehaviour
         {
             g.SetActive(true);
         }
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, _informRadius, enemyLayer);
+        foreach (Collider2D en in enemies)
+        {
+            if(en.TryGetComponent<Enemy>(out Enemy E)) E._playerHide = false;
+        }
 
     }
     private void ObjectFound()
@@ -66,5 +110,9 @@ public class HidingMechanics : MonoBehaviour
         // Code to run when an object is found
         
     }
-
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _informRadius);
+    }
 }

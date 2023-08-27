@@ -14,6 +14,7 @@ public class OutlineScript : MonoBehaviour
     private void Start()
     {
         //_outlineObject.SetActive(false);
+        Outline(false);
     }
     public void Outline(bool show)
     {

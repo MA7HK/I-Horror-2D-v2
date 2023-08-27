@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class HidePlace : InteractableObject
 {
-
+    public Transform _hidePlace;
     public override void ItemFunction()
     {
        

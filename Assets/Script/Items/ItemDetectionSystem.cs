@@ -86,7 +86,7 @@ public class ItemDetectionSystem : MonoBehaviour
             if(type==interactableObjectType.hidePlace)
             {
                 if (_hideSystem.isHiding) _hideSystem.UnHide();
-                else _hideSystem.Hide();
+                else _hideSystem.Hide(_currentItemDetected.GetComponent<HidePlace>()._hidePlace);
             }
         }
         }

@@ -1,44 +1,51 @@
-/*using UnityEngine;
 
-public class TorchLightController : MonoBehaviour
-{
-    private Camera mainCamera;
-    public Transform _torchLightTransform;
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
-
-    private void Update()
-    {
-        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        RotateTowardsMousePosition(mousePosition);
-    }
-
-    private void RotateTowardsMousePosition(Vector2 targetPosition)
-    {
-        Vector2 objectPosition = _torchLightTransform.position;
-        Vector2 direction = targetPosition - objectPosition;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-        _torchLightTransform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-    }
-}*/
 
 
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Rendering.Universal;
+using System.Collections;
 
 public class TorchLightController : MonoBehaviour
 {
     public Transform _torchLightTransform;
-
+    public bool _torchOn = true;
+    public GameObject _torchLightObject;
+    public float blinkDuration = .5f;
+    public Light2D _centerSelfLight;
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         RotateTowardsInputDirection(horizontalInput, verticalInput);
-    }
 
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            _torchOn = !_torchOn;
+            _torchLightObject.SetActive(_torchOn);
+            if (_torchOn) _centerSelfLight.intensity = 2f;
+            else _centerSelfLight.intensity = 1f;
+        }
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            LightFlicker();
+        }
+    }
+    public void LightFlicker()
+    {
+        StartCoroutine(Blink());
+        IEnumerator Blink()
+        {
+            float blinkCounter=0f;
+            while (blinkCounter<=blinkDuration)
+            {
+                _torchLightObject.SetActive(false);
+                yield return new WaitForSeconds(blinkDuration * Mathf.PingPong(Time.time, 1));
+                _torchLightObject.SetActive(true);
+                yield return new WaitForSeconds(blinkDuration * Mathf.PingPong(Time.time, 1));
+                blinkCounter += Time.deltaTime;
+            }
+        }
+    }
     private void RotateTowardsInputDirection(float horizontal, float vertical)
     {
         if (horizontal != 0 || vertical != 0)
