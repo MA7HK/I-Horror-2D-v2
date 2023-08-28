@@ -27,25 +27,20 @@ public class TorchLightController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.H))
         {
-            LightFlicker();
+            StartCoroutine(Blink());
         }
     }
-    public void LightFlicker()
+    private IEnumerator Blink()
     {
-        StartCoroutine(Blink());
-        IEnumerator Blink()
+        float timeElapsed = 0f;
+        while (timeElapsed < blinkDuration)
         {
-            float blinkCounter=0f;
-            while (blinkCounter<=blinkDuration)
-            {
-                _torchLightObject.SetActive(false);
-                yield return new WaitForSeconds(blinkDuration * Mathf.PingPong(Time.time, 1));
-                _torchLightObject.SetActive(true);
-                yield return new WaitForSeconds(blinkDuration * Mathf.PingPong(Time.time, 1));
-                blinkCounter += Time.deltaTime;
-            }
+            _torchLightObject.SetActive(!_torchLightObject.activeSelf);
+            timeElapsed += blinkDuration / 5f;
+            yield return new WaitForSeconds(blinkDuration / 5f);
         }
     }
+
     private void RotateTowardsInputDirection(float horizontal, float vertical)
     {
         if (horizontal != 0 || vertical != 0)

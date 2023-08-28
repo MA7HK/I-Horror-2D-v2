@@ -28,7 +28,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if(isDecreasingHealth)
         {
-            
+
+            if (!_healthBar.gameObject.activeInHierarchy)
+                _healthBar.gameObject.SetActive(true);
+
             if (_healthBar.sizeDelta.x <= minHealth)
                 DieFunction();
             else Decrease();
@@ -37,11 +40,15 @@ public class PlayerHealth : MonoBehaviour
         {
             if (_healthBar.sizeDelta.x <= _startingHealth)
                 Increase();
+           
         }
        if (chasingEnemies.Count > 0)
             isDecreasingHealth = true;
         else
             isDecreasingHealth = false;
+
+        if (!isDecreasingHealth && _healthBar.sizeDelta.x >= _startingHealth && _healthBar.gameObject.activeInHierarchy)
+            _healthBar.gameObject.SetActive(false);
 
     }
     public void removeFromEnemyList(Enemy e)

@@ -17,7 +17,7 @@ public class Trapper : Enemy
     {
         _enemySprite.DOFade(1f, 1f).From(0f);
         foreach (GameObject g in visibleObjects) g.SetActive(false);
-    }
+    } 
     private void Update()
     {
         if(isSeen )
