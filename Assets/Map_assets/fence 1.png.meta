@@ -121,7 +121,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: fence 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2565
+        width: 175
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d39c7f67290324596ec99dcd9ad21b
+      internalID: 2116054845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence 1_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2673
+        width: 169
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d282f03875d172489e804b23122c250
+      internalID: -1597678644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence 1_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 147
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46eae0b3bb392e44ca527f9a1921a8b9
+      internalID: -889720942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +195,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fence 1_0: 2116054845
+      fence 1_1: -1597678644
+      fence 1_2: 753419289
+      fence 1_3: -889720942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

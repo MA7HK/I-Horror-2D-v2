@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour
         
         for(int i=0;i<_slotImages.Count;i++)
         {
-            if (_slotBools_isAvailable[i])
+            if (_slotBools_isAvailable[i]) 
             {
                 slotItems[i] = io._itemName;
                 _slotImages[i].sprite = sp;
@@ -55,10 +55,39 @@ public class Inventory : MonoBehaviour
     {
          //
     }
-    public void DiscardItem(string itemName)
+    public void DiscardItem(string s)
     {
-        //check the items
-        //change the opacity back and remove item.
+        for(int i=0;i<slotItems.Length;i++)
+        {
+            if (slotItems[i] == s)
+            {
+                DiscardItem(i); return;
+            }
+        }
+        Debug.Log("Item not found");
+    }
+    public void DiscardItem(int i)
+    {
+        if (!_slotBools_isAvailable[i])
+        {
+
+        //instantiate the particular item 
+        _slotBools_isAvailable[i] = true;
+        slotItems[i] = null;
+
+            _slotImages[i].sprite = null;
+            //   CollectEffect(io.transform.position, _slotImages[i].rectTransform);
+            _slotBools_isAvailable[i] = true;
+            Color c = _slotImages[i].color;
+            c.a = 0f;
+            _slotImages[i].color = c;
+
+        }
+        else
+        {
+            Debug.Log("Nothing in the slot");
+        }
+
     }
 
 }

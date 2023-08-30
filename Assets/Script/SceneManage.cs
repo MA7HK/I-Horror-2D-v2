@@ -20,21 +20,23 @@ public class SceneManage : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    public List<GameObject> gameObjectsToKeep;
-    public void LoadHall()
+    private void Start()
     {
         foreach (GameObject go in gameObjectsToKeep)
         {
             DontDestroyOnLoad(go);
         }
+    }
+    public List<GameObject> gameObjectsToKeep;
+    public void LoadHall()
+    {
+       
         SceneManager.LoadSceneAsync(3);
     }
     public void LoadMainMap()
     {
-       /* foreach (GameObject go in gameObjectsToKeep)
-        {
-            DontDestroyOnLoad(go);
-        }*/
+        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Player"));
+        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("MainCamera"));
         SceneManager.LoadSceneAsync(2);
     }
 
