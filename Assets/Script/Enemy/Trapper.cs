@@ -24,6 +24,7 @@ public class Trapper : Enemy
         {
             if (!_isvisible)
             {
+                S_SoundManager.SFX.HitSound();
                 foreach (GameObject g in visibleObjects) g.SetActive(true);
                 _isvisible = true;
             }

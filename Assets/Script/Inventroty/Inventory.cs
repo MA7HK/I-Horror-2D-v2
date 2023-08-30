@@ -39,6 +39,7 @@ public class Inventory : MonoBehaviour
         {
             if (_slotBools_isAvailable[i]) 
             {
+                S_SoundManager.SFX.PickUpSound();
                 slotItems[i] = io._itemName;
                 _slotImages[i].sprite = sp;
              //   CollectEffect(io.transform.position, _slotImages[i].rectTransform);

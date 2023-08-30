@@ -7,6 +7,13 @@ public class S_SoundManager : MonoBehaviour
 
     public AudioSource audioSource;
 
+    [Header("Player")]
+    public AudioClip WalkingSfx;
+    public AudioClip heartBeat;
+    public AudioClip PickupSfx;
+
+    [Header("Door")]
+    public AudioClip OuterdoorSfx;
 
     [Header("Ambience")]
     public AudioClip AmbienceSfx;
@@ -17,9 +24,9 @@ public class S_SoundManager : MonoBehaviour
     [Header("Thunder")]
     public AudioClip[] thundersfx;
 
-    [Header("Player")]
-    public AudioClip WalkingSfx;
-    public AudioClip heartBeat;
+    [Header("Ghosts")]
+    public AudioClip Hit_1;
+    
 
     private void Awake()
     {
@@ -36,7 +43,7 @@ public class S_SoundManager : MonoBehaviour
     private void Start()
     {
         audioSource.PlayOneShot(AmbienceSfx);
-        audioSource.volume = 0.2f;
+        audioSource.volume = 0.1f;
     }
 
     public void ThunderSfx()
@@ -83,4 +90,29 @@ public class S_SoundManager : MonoBehaviour
         }
     }
 
+    public void OuterDoorSound(bool isOpen) 
+    {
+        if(isOpen) 
+        {
+            audioSource.PlayOneShot(OuterdoorSfx);
+            audioSource.volume = 0.2f;
+        }
+        else if(!isOpen)
+        {
+            audioSource.PlayOneShot(OuterdoorSfx);
+            audioSource.volume = 0.2f;
+        }
+    }
+
+    public void PickUpSound()
+    {
+        audioSource.PlayOneShot(PickupSfx);
+        audioSource.volume = 1.5f;
+    }
+
+    public void HitSound()
+    {
+        audioSource.PlayOneShot(Hit_1);
+        audioSource.volume = 1.5f;
+    }
 }

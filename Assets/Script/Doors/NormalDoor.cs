@@ -18,6 +18,8 @@ public class NormalDoor : InteractableObject
         isOpen = !isOpen;
         closedObject.SetActive(!isOpen);
         openedObject.SetActive(isOpen);
+        S_SoundManager.SFX.OuterDoorSound(isOpen);
+
     }
     public override void ItemFunction()
     {
