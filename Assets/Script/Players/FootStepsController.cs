@@ -32,15 +32,19 @@ public class FootStepsController : MonoBehaviour
         for (int i = footsteps.Count - 1; i >= 0; i--)
         {
             GameObject footstep = footsteps[i];
-            SpriteRenderer sr = footstep.GetComponent<SpriteRenderer>();
-            Color color = sr.color;
-            color.a -= Time.deltaTime / fadeTime;
-            sr.color = color;
-
-            if (color.a <= 0)
+            if (footstep!=null && footstep.TryGetComponent<SpriteRenderer>(out SpriteRenderer sr))
             {
-                footsteps.RemoveAt(i);
-                Destroy(footstep);
+
+                if (sr == null) { footsteps.RemoveAt(i); continue; }
+                Color color = sr.color;
+                color.a -= Time.deltaTime / fadeTime;
+                sr.color = color;
+
+                if (color.a <= 0)
+                {
+                    footsteps.RemoveAt(i);
+                    Destroy(footstep);
+                }
             }
         }
     }

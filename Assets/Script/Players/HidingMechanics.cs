@@ -26,6 +26,7 @@ public class HidingMechanics : MonoBehaviour
    [SerializeField]  private float _targetAlphaforBackground;
    [SerializeField]  private RectTransform _characterCoverHideUI;
      [SerializeField] private float _targetAlphaofCover;
+    [SerializeField] GameObject _hideLight;
 
     [Header("references")]
     [SerializeField] S_Movement _movement;
@@ -37,7 +38,9 @@ public class HidingMechanics : MonoBehaviour
     public LayerMask enemyLayer;
    public void Hide()
     {
+
         _HideUI.SetActive(true);
+        _hideLight.SetActive(true);
         _backgroundHideUI.DOFade(_targetAlphaforBackground, .4f);
         Vector3 pos = Camera.main.WorldToScreenPoint(new Vector3(transform.position.x, transform.position.y, -10f));
         _characterCoverHideUI.GetComponent<Image>().DOFade(_targetAlphaofCover, .3f).OnStart(() => { _characterCoverHideUI.DOMove(pos, .3f); });
@@ -61,6 +64,7 @@ public class HidingMechanics : MonoBehaviour
     {
         player.position = hidePlace.position;
         _HideUI.SetActive(true);
+        _hideLight.SetActive(true);
         _backgroundHideUI.DOFade(_targetAlphaforBackground, .4f);
         Vector3 pos = Camera.main.WorldToScreenPoint(hidePlace.position);
         _characterCoverHideUI.GetComponent<Image>().DOFade(_targetAlphaofCover, .3f).SetDelay(.1f).OnStart(() => { _characterCoverHideUI.DOMove(pos, .3f); });
@@ -85,10 +89,10 @@ public class HidingMechanics : MonoBehaviour
     }
     public void UnHide()
     {
+            _hideLight.SetActive(false);
         _backgroundHideUI.DOFade(0, .4f);
         _characterCoverHideUI.GetComponent<Image>().DOFade(0, .3f).OnComplete(() =>
         {
-
         _HideUI.SetActive(false);
         });
 
