@@ -658,6 +658,7 @@ MonoBehaviour:
   _targetAlphaforBackground: 0.75
   _characterCoverHideUI: {fileID: 0}
   _targetAlphaofCover: 0.1
+  _hideLight: {fileID: 0}
   _movement: {fileID: 2871252021234107594}
   itemsToHide:
   - {fileID: 6573743733560237684}
@@ -1862,7 +1863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.3214, y: 56.30005}
+  m_AnchoredPosition: {x: 2.3214, y: 150}
   m_SizeDelta: {x: 1900, y: 17.183}
   m_Pivot: {x: 0.5, y: 0.49999997}
 --- !u!1 &7644896032530698905

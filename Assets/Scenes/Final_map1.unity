@@ -15798,10 +15798,6 @@ PrefabInstance:
       propertyPath: _Inventory
       value: 
       objectReference: {fileID: 775671582}
-    - target: {fileID: 3608996762773649992, guid: 5f3212e17cb928b448535750f86513dc, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 6034008207561600620, guid: 5f3212e17cb928b448535750f86513dc, type: 3}
       propertyPath: _HideUI
       value: 
