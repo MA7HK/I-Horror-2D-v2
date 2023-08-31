@@ -25,7 +25,13 @@ public class S_SoundManager : MonoBehaviour
     public AudioClip[] thundersfx;
 
     [Header("Ghosts")]
-    public AudioClip Hit_1;
+    public AudioClip Impact_1;
+
+    public AudioClip[] Hit_1;
+
+
+    public AudioClip Noise_2;
+
     
 
     private void Awake()
@@ -44,6 +50,7 @@ public class S_SoundManager : MonoBehaviour
     {
         audioSource.PlayOneShot(AmbienceSfx);
         audioSource.volume = 0.1f;
+   
     }
 
     public void ThunderSfx()
@@ -53,11 +60,13 @@ public class S_SoundManager : MonoBehaviour
         audioSource.volume = 0.6f;
     }
 
-    public void HeartBeat()
+    public void HeartBeat(bool Heart)
     {
-        audioSource.loop = true;
-        audioSource.volume = 1.0f;
-        audioSource.PlayOneShot(heartBeat);
+        if(Heart)
+        {
+            audioSource.PlayOneShot(heartBeat);
+            audioSource.volume = 1.0f;
+        }
     }
 
     public void PlayerWalking()
@@ -66,11 +75,12 @@ public class S_SoundManager : MonoBehaviour
         
     }
 
-    public void HallSound()
+    /*public void HallSound()
     {
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
             audioSource.PlayOneShot(HallAmbienceSfx);
+            audioSource.volume = 0.1f;
         }
     }
     
@@ -79,6 +89,7 @@ public class S_SoundManager : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
             audioSource.PlayOneShot(BasementSfx);
+            audioSource.volume = 0.1f;
         }
     }
     
@@ -87,32 +98,41 @@ public class S_SoundManager : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 5)
         {
             audioSource.PlayOneShot(BasementUpperRoomSfx);
+            audioSource.volume = 0.1f;
         }
-    }
+    }*/
 
     public void OuterDoorSound(bool isOpen) 
     {
         if(isOpen) 
         {
             audioSource.PlayOneShot(OuterdoorSfx);
-            audioSource.volume = 0.2f;
+            audioSource.volume = 0.4f;
         }
         else if(!isOpen)
         {
             audioSource.PlayOneShot(OuterdoorSfx);
-            audioSource.volume = 0.2f;
+            audioSource.volume = 0.4f;
         }
     }
 
     public void PickUpSound()
     {
         audioSource.PlayOneShot(PickupSfx);
-        audioSource.volume = 1.5f;
+        audioSource.volume = 3f;
     }
 
-    public void HitSound()
+    public void ImpactSound()
     {
-        audioSource.PlayOneShot(Hit_1);
+        audioSource.PlayOneShot(Impact_1);
         audioSource.volume = 1.5f;
     }
+    public void HitSound_1(int i)
+    {
+        audioSource.PlayOneShot(Hit_1[i]);
+    }
+    
+
+    
+
 }

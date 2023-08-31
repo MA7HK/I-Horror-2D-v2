@@ -23,8 +23,9 @@ public class Trapper : Enemy
         if(isSeen )
         {
             if (!_isvisible)
-            {
-                S_SoundManager.SFX.HitSound();
+            {  
+                
+                S_SoundManager.SFX.ImpactSound();
                 foreach (GameObject g in visibleObjects) g.SetActive(true);
                 _isvisible = true;
             }
@@ -34,17 +35,19 @@ public class Trapper : Enemy
                 //start chasing effect. jumpscare
                 transform.DOShakePosition(.25f,1, 7,90).OnComplete(() =>
                 {
-                ischasing = true;
+                    ischasing = true;
+                    
                     if (player.TryGetComponent<PlayerHealth>(out PlayerHealth playerh))
                     {
                         playerh.addEnemy(this);
                     }
                 });
+                
             }
         }
         if (ischasing && !_playerHide)
         {
-           
+            
             //find player;
             ChasePlayer();
         }
@@ -66,6 +69,7 @@ public class Trapper : Enemy
     {
         _enemySprite.DOFade(0f, 1f).OnComplete(() =>{
             Destroy(gameObject);
+            
         });
         
     }
@@ -94,6 +98,7 @@ public class Trapper : Enemy
                 playerH.removeFromEnemyList(this); 
             }
             _playerHide = true;
+            
         }
 
     }
